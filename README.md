@@ -14,5 +14,3 @@ This bot update Google Sheets from Telegram bot and also sends an email as confi
 2. Copy-paste the bot.js code in you script and fill the above details carefully.
 3. You will be poped up for google authentication to complete it.
 4. Add items by sending a message to telegram bot like "$500 FRUITS BANK"
-# Credits:
-https://thedevashish.in
