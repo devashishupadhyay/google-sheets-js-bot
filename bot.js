@@ -40,7 +40,7 @@ function dp(e) {
     var emailreply = "Mail has been sent as Acknowledgement."
     SpreadsheetApp.openById(ssId).getSheets()[0].appendRow([new Date(),amt,comment,mode,"Entry Done by Telegram"]);
     sendText(id,answer);
-    GmailApp.sendEmail("<YOUR-EMAIL>","This is to notify that your sheet has been updated by ₹" + amt , "Hi Devashish Upadhyay," + "\n" + "This is to Notify that you have made Payment of ₹" + amt + " " + "for " + comment + " " + "by " + mode + " " + "and the same has been updated to your Sheet." + "\n" + "Thank You" + "\n" + "Telegram Bot by Devashish Upadhyay");
+    GmailApp.sendEmail("<YOUR-EMAIL>","This is to notify that your sheet has been updated by ₹" + amt , "Hi," + "\n" + "This is to Notify that you have made Payment of ₹" + amt + " " + "for " + comment + " " + "by " + mode + " " + "and the same has been updated to your Sheet." + "\n" + "Thank You" + "\n");
     sendText(id,emailreply);
     }
   else if (text == "Wake") {
@@ -48,7 +48,7 @@ function dp(e) {
     }
   }
   else{
-    var notuser = "You are not authorised to use this bot. Click www.thedevashish.in/contact to contact."
+    var notuser = "You are not authorised to use this bot."
     sendText(id,notuser)
   }
 }
